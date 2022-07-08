@@ -1,0 +1,86 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-image: url("./bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.head {
+  color: white;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(95, 95, 95, 0.319);
+  text-align: center;
+  margin: 2em 1em 1em 1em;
+  padding: 0.1em 1em 0.1em 1em;
+  border-radius: 8px;
+}
+
+.maincard {
+  color: white;
+  background-color: rgba(95, 95, 95, 0.319);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  padding: 6em 1em 0.2em 1em;
+  margin: 2em 1em 1em 1em;
+  border-radius: 8px;
+}
+
+.infocard {
+  color: white;
+  background-color: rgba(95, 95, 95, 0.319);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  padding: 1em 1em 1em 1em;
+  margin: 2em 1em 1em 1em;
+  border-radius: 8px;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  background-color: rgba(7, 7, 7, 0.786);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  width: 100%;
+  border: 3px solid rgba(95, 95, 95, 0.319);
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: rgba(95, 95, 95, 0.319);
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid rgba(95, 95, 95, 0.319);
+  background: rgba(45, 45, 45, 0.86);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 93.3%;
+  margin: auto;
+}
+
+@media only screen and (min-width: 800px) {
+  .wrap {
+    width: 60%;
+  }
+}/*# sourceMappingURL=main.css.map */
