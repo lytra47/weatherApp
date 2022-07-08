@@ -37,42 +37,6 @@ body {
   border-radius: 8px;
 }
 
-.search {
-  width: 100%;
-  position: relative;
-  display: flex;
-}
-
-.searchTerm {
-  background-color: rgba(7, 7, 7, 0.786);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  width: 100%;
-  border: 3px solid rgba(95, 95, 95, 0.319);
-  border-right: none;
-  padding: 5px;
-  height: 20px;
-  border-radius: 8px 0 0 8px;
-  outline: none;
-  color: #9dbfaf;
-}
-
-.searchTerm:focus {
-  color: rgba(95, 95, 95, 0.319);
-}
-
-.searchButton {
-  width: 40px;
-  height: 36px;
-  border: 1px solid rgba(95, 95, 95, 0.319);
-  background: rgba(45, 45, 45, 0.86);
-  text-align: center;
-  color: #fff;
-  border-radius: 0 8px 8px 0;
-  cursor: pointer;
-  font-size: 20px;
-}
-
 /*Resize the wrap to see the search bar change!*/
 .wrap {
   width: 93.3%;
@@ -81,6 +45,36 @@ body {
 
 @media only screen and (min-width: 800px) {
   .wrap {
-    width: 60%;
+    margin-top: -6.01em;
+    width: 45%;
+    margin-left: auto;
+    margin-right: 1.5em;
+  }
+
+  .head {
+    width: 45%;
+    margin-right: auto;
+    margin-left: 1.5em;
+    padding-block: 1em;
+  }
+
+  .input-group input {
+    border-radius: 8px 0px 0 8px !important;
+    font-size: 2em;
+    height: 2.51em;
+  }
+  .input-group button {
+    border-radius: 0px 8px 8px 0px !important;
+    font-size: 1.5em;
+  }
+
+  .maincard {
+    margin-inline: 1.5em;
+    padding: 7em 2em 1em 2em;
+  }
+
+  .infocard {
+    margin-inline: 1.5em;
+    padding: em 2em 1em 2em;
   }
 }/*# sourceMappingURL=main.css.map */
