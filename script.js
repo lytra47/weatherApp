@@ -19,8 +19,10 @@ function displayData(weath) {
   } else {
     city.innerHTML = weath.name;
     mainw.innerHTML = weath.weather[0].main;
-    degree.innerHTML = Math.floor(weath.main.temp - 273) + `<sup>o</sup>C`;
-    feels.innerHTML = Math.floor(weath.main.feels_like - 273) + `<sup>o</sup>C`;
+    // degree.innerHTML = Math.floor(weath.main.temp - 273) + `<sup>o</sup>C`;
+    degree.innerHTML = Math.floor(weath.main.temp - 273.15) + `<sup>o</sup>C`;
+    feels.innerHTML =
+      Math.floor(weath.main.feels_like - 273.15) + `<sup>o</sup>C`;
     humid.innerHTML = weath.main.humidity;
     pressure.innerHTML = weath.main.pressure;
     wind.innerHTML = weath.wind.speed;
