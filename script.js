@@ -27,7 +27,7 @@ function displayData(weath) {
     vis.innerHTML = weath.visibility;
     // ICON
     weathICON = weath.weather[0].icon;
-    icon.innerHTML = `  <img src="http://openweathermap.org/img/wn/${weathICON}@2x.png" alt="" /> `; //  //  weath.weather[0].id;
+    icon.innerHTML = `  <img src="http://openweathermap.org/img/wn/${weathICON}@4x.png" alt="" /> `; //  //  weath.weather[0].id;
   }
 
   // document.getElementById("result").innerHTML += htmlData;

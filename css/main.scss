@@ -30,14 +30,20 @@ body {
   color: white;
   background-color: rgba(59, 44, 63, 0.574);
   backdrop-filter: blur(20px);
-  padding: 6em 1em 2em 2em;
-  margin: 1em 1em 1em 1em;
+  padding: 8em 1em 1em 2em;
+  margin: 2em 1em 1em 1em;
   border-radius: 8px;
 
   .right {
+    background-color: rgba(241, 232, 246, 0.285);
+    border-radius: 8px;
+    margin-left: auto;
+    margin-top: -6em;
+    margin-right: 1em;
+    margin-bottom: auto;
     color: white;
     img {
-      width: 5em;
+      width: 10em;
     }
   }
 }
@@ -50,16 +56,24 @@ body {
   padding: 1em 1em 1em 2em;
   margin: 1em 1em 1em 1em;
   border-radius: 8px;
+  hr {
+    margin-right: 1em;
+  }
 }
 
 .wrap {
   margin: 1em 1em 1em 1em;
 }
-
+section {
+  margin-top: 1em;
+  hr {
+    color: #492f5a00;
+  }
+}
 @media only screen and (min-width: 800px) {
   .wrap {
     width: 45%;
-    margin-top: 0em;
+    margin-top: 1em;
     margin-left: auto;
     margin-right: 1.5em;
     padding-block: 1em;
@@ -103,6 +117,7 @@ body {
     width: 42%;
   }
   .wrap {
+    margin-top: 2em;
     width: 42%;
     margin-right: 4em;
   }
@@ -110,17 +125,42 @@ body {
     padding-left: 4em;
     padding-bottom: 2em;
     margin: 0 4em 0 4em;
+    .right {
+      margin-right: 2em;
+      margin-top: -1em;
+    }
   }
   .infocard {
     display: flex;
     margin: 2em 4em 0 4em;
+    padding-right: 2em;
   }
   .capsule {
-    padding-block: 2em;
+    width: 20%;
+    padding-block: 1em;
+    padding-inline: 2em;
     margin: auto;
+    margin-block: 1em;
+    border-radius: 8px;
     text-align: center;
   }
 }
 
 @media only screen and (min-width: 1200px) {
+  .wrap {
+    margin-top: 3em;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .capsule {
+    width: 15%;
+    background-color: #cccacd33;
+    padding-block: 1em;
+    padding-inline: 2em;
+    margin: auto;
+    margin-block: 1em;
+    border-radius: 8px;
+    text-align: center;
+  }
 }
