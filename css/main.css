@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 body {
+  text-shadow: 3px 5px 8px #492f5a;
+  font-family: "Roboto", sans-serif;
   background-color: #580093;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23580093' cx='50' cy='0' r='50'/%3E%3Cg fill='%235e0198' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%2364019e' cx='50' cy='100' r='50'/%3E%3Cg fill='%236a02a3' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%237002a9' cx='50' cy='200' r='50'/%3E%3Cg fill='%237603ae' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%237d04b4' cx='50' cy='300' r='50'/%3E%3Cg fill='%238304b9' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%238a05bf' cx='50' cy='400' r='50'/%3E%3Cg fill='%239005c4' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%239705ca' cx='50' cy='500' r='50'/%3E%3Cg fill='%239e06cf' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a406d4' cx='50' cy='600' r='50'/%3E%3Cg fill='%23ab06da' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b205df' cx='50' cy='700' r='50'/%3E%3Cg fill='%23b905e5' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c005ea' cx='50' cy='800' r='50'/%3E%3Cg fill='%23c704ef' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ce03f4' cx='50' cy='900' r='50'/%3E%3Cg fill='%23d602fa' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23D0F' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
@@ -6,33 +9,46 @@ body {
 }
 
 .head {
+  box-shadow: 3px 4px 5px rgba(66, 31, 84, 0.393);
   color: white;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
-  background-color: rgba(48, 48, 48, 0.362);
+  background-color: rgba(59, 44, 63, 0.574);
   text-align: center;
-  margin: 2em 1em 1em 1em;
-  padding: 0.1em 1em 0.1em 1em;
+  margin: 1em 1em 1em 1em;
+  padding: 0.5em 1em 0.5em 1em;
   border-radius: 8px;
 }
 
 .maincard {
+  box-shadow: 3px 4px 5px rgba(66, 31, 84, 0.393);
+  display: flex;
   color: white;
-  background-color: rgba(48, 48, 48, 0.362);
+  background-color: rgba(59, 44, 63, 0.574);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
-  padding: 6em 1em 0.2em 1em;
-  margin: 2em 1em 1em 1em;
+  padding: 6em 1em 2em 2em;
+  margin: 1em 1em 1em 1em;
   border-radius: 8px;
+}
+.maincard h1 {
+  font-size: 3em !important;
+}
+.maincard .right {
+  color: white;
+}
+.maincard .right img {
+  width: 5em;
 }
 
 .infocard {
   color: white;
-  background-color: rgba(48, 48, 48, 0.362);
+  box-shadow: 3px 4px 5px rgba(66, 31, 84, 0.393);
+  background-color: rgba(59, 44, 63, 0.574);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
-  padding: 1em 1em 1em 1em;
-  margin: 2em 1em 1em 1em;
+  padding: 1em 1em 1em 2em;
+  margin: 1em 1em 1em 1em;
   border-radius: 8px;
 }
 
@@ -45,20 +61,20 @@ body {
 @media only screen and (min-width: 800px) {
   .wrap {
     width: 45%;
-    margin-top: 2.5em;
+    margin-top: 0em;
     margin-left: auto;
     margin-right: 1.5em;
+    padding-block: 1em;
   }
-
   .head {
     position: absolute;
     width: 45%;
-    margin-top: 0;
+    height: 5.4em;
+    margin-top: 2;
     margin-right: auto;
     margin-left: 1.5em;
     padding-block: 1em;
   }
-
   .input-group input {
     border-radius: 8px 0px 0 8px !important;
     font-size: 2em;
@@ -69,12 +85,10 @@ body {
     border-radius: 0px 8px 8px 0px !important;
     font-size: 1.5em;
   }
-
   .maincard {
     margin-inline: 1.5em;
     padding: 7em 2em 1em 2em;
   }
-
   .infocard {
     margin-inline: 1.5em;
     padding: em 2em 1em 2em;
@@ -82,42 +96,25 @@ body {
 }
 @media only screen and (min-width: 1000px) {
   .head {
-    width: auto;
-    margin: 2em;
-    margin-top: 1em;
-    position: relative;
+    margin-left: 4em;
+    width: 42%;
   }
-
   .wrap {
-    margin-right: 2em;
-    width: 44%;
+    width: 42%;
+    margin-right: 4em;
   }
-
-  .input-group input {
-    border-radius: 8px 0px 0 8px !important;
-    font-size: 1em;
-    padding-left: 1em;
-    padding-block: 10px;
-  }
-  .input-group button {
-    border-radius: 0px 8px 8px 0px !important;
-    font-size: 1em;
-  }
-
   .maincard {
-    width: 45%;
-    margin-inline: 2em;
-    padding: 2em 2em;
+    padding-left: 4em;
+    padding-bottom: 2em;
+    margin: 0 4em 0 4em;
   }
-
   .infocard {
-    float: right;
-    width: 45%;
-    padding-left: 2em;
-    margin-inline: 2em;
-  }
-
-  .cardparent {
     display: flex;
+    margin: 2em 4em 0 4em;
+  }
+  .capsule {
+    padding-block: 2em;
+    margin: auto;
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
