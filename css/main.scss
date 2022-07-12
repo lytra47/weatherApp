@@ -167,9 +167,12 @@ section {
 
 @media only screen and (max-width: 600px) {
   .maincard {
+    position: relative;
     .right {
-      position: fixed;
-      margin-left: 50%;
+      position: absolute;
+      img {
+        width: 4em;
+      }
     }
   }
 }
