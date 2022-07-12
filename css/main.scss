@@ -20,6 +20,7 @@ body {
   padding: 0.5em 1em 0.5em 1em;
   border-radius: 8px;
 }
+
 .maincard {
   box-shadow: 3px 4px 5px rgba(66, 31, 84, 0.393);
 
@@ -63,6 +64,10 @@ body {
 
 .wrap {
   margin: 1em 1em 1em 1em;
+  .input-group {
+    border-radius: 8px;
+    box-shadow: 3px 4px 5px rgba(66, 31, 84, 0.393);
+  }
 }
 section {
   margin-top: 1em;

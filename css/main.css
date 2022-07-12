@@ -65,6 +65,10 @@ body {
 .wrap {
   margin: 1em 1em 1em 1em;
 }
+.wrap .input-group {
+  border-radius: 8px;
+  box-shadow: 3px 4px 5px rgba(66, 31, 84, 0.393);
+}
 
 section {
   margin-top: 1em;
